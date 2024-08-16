@@ -78,9 +78,9 @@ class UrTube:
             print('Нужно залогиниться')
             return
         else:
-            print(self.current_user.age)
+            print('Возраст зрителя: ', self.current_user.age, 'лет')
         for i in self.videos:
-            print(i.adult_mode, name_film)
+            # print(i.adult_mode, name_film)
             if name_film == i.title:
                 if (i.adult_mode and self.current_user.age >= 18) or (i.adult_mode == False):
                     total_seconds = 0
